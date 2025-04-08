@@ -88,11 +88,10 @@ start
 isLoading
 {
 	return current.isLoading || vars.FNameToShortString2(current.localPlayer) != "PlayerController_C_" || vars.FNameToString(current.Level) == "me-mainmenu_art" ||
-		vars.FNameToString(current.Level) == "EmptyTransitionMap" || vars.FNameToString(current.Level) == "Planet_001";
+		vars.FNameToString(current.Level) == "EmptyTransitionMap" || vars.FNameToString(current.Level) == "Planet_001" || current.MissionSummary == 4;
 }
 
 split
 {
 	return current.MissionSummary == 4 && old.MissionSummary == 1;
 }
-
