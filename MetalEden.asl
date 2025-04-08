@@ -75,7 +75,7 @@ update
     vars.Helper.Update();
 	vars.Helper.MapPointers();
 	
-	print(vars.FNameToString(current.Maybe));
+	//print(vars.FNameToString(current.Maybe));
 	
 	//print(current.Maybe.ToString());
 }
